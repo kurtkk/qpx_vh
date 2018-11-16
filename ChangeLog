@@ -1,0 +1,81 @@
+2018-11-11
+   'version' => '8.8.0',
+   NEW: Classes -> DataProcessing -> CategoryProcessor.php
+
+2018-10-23
+   'version' => '8.7.13',
+   VH ConcatenateTitle (neu) macht aus dem Kategorietitel einen zusamenhängenden String für eine Klasse (class="...")
+
+2018-10-12
+   'version' => '8.7.12',
+   VH "ceCatName" eliminiert sonstige Sonderzeichen wie "#" oder ":" (bereit für TYPO3 V9)
+   VH ConcatenateTitle (neu) macht aus dem Kategorietitel einen zusamenhängenden String für eine Klasse (class="...")
+
+2018-08-24
+   'version' => '8.7.11',
+   VH "ceCatName" ersetzt Umlaute und "ß" durch "ae" ... "ss"
+
+2018-06-01
+   'version' => '8.7.10',
+   erweiterter VH "StringReplaceViewHelper"
+   neuer VH "DateDiff": Datum-Differenz, return_format='true' means 1 day more
+      Aufruf: {qpx:DateDiff(date1:'{n.datetime}', date2:'{n.eventEnd}', return_format:'true')}
+
+2018-01-13
+   'version' => '8.7.7',
+   configuration => RTE: Konfigurationsdatei für den neuen RTE ckeditor "Qpx.yaml" erweitert und Rte.css aud Ext. genommen
+   Resources => Public => Css => Rte.css
+	
+
+2017-05-27
+   'version' => '8.7.1',
+   configuration => RTE: Konfigurationsdatei für den neuen RTE ckeditor "Qpx.yaml"
+
+2017-03-27
+   'version' => '4.1.0',
+   zusätzlicher Viewhelper "AnalyseRowDescription" (prüft, ob ein bstimmter String in der CE-Beschreibung enthalten ist, wenn ja, gibt er diesen zurück, wenn nein rückgabe = leer)
+ 
+2017-02-07
+   'version' => '4.0.0',
+   Alle "tt_content"-Erweiterungen jetzt in dieser Extension (.../overwrite/tt_content.php)
+   - headerposition
+   - headerstyle
+   - spaceAfter
+   - spaceBefore
+   reduzierte extTables.php(extension)
+   reduzierte extTables.php(typo3conf)   
+
+2016-12-27
+   'version' => '2.1.0',
+   VH SetPrintLinksInfo: erstellt Info zu den Links in enem CE für die Print-Ansicht
+
+2016-11-16
+   'version' => '2.0.0',
+   VH CeSitemapABC: erstellt eine Übersicht über alle CE aller Seiten ab Übergabe-PID in alphabetischer Reihenfolge
+
+2016-10-26
+   'version' => '1.2.0',
+   VH geLayoutImage: ein weiterer Parameter: "sorting" - wenn mehrere Bilder hochgeladen wurden 
+   z.B. sorting_foreign = 1 entspr. erstes Bild
+
+
+2016-07-17
+   'version' => '0.1.3',
+   Einfügen der tt_content-Felder und Paletten "spaceBefore" und "spaceAfter"
+
+2016-07-05
+   'version' => '0.1.2',
+   Korrekturen in StringReplaceViewHelper
+
+
+2016-06-20
+   'version' => '0.0.5',
+   Erweiterung um VH GeLayoutImage (uid)
+
+2016-06-14
+   'version' => '0.0.4'
+   Erweiterung um VH PageCatName (uid)
+
+2016-05-14
+   'version' => '0.0.3'
+   Erweiterung um VH CeCatName (uid, table_field)
